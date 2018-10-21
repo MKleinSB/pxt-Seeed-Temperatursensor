@@ -18,6 +18,12 @@
 
 ![](https://github.com/MKleinSB/pxt-Seeed-Temperatursensor/blob/master/P1.png) 
 
+## temperatur
+Diese Funktion gibt die aktuelle Temperatur als Zahl zurück.
+
+## schreibe temperatur
+Diese Funktion schreibt die aktuelle Temperatur auf das Diplay des Calliope Mini / micro:bit
+
 ## Supported targets
 
 * for PXT/calliope
