@@ -16,6 +16,7 @@
 
  Der Wert -1 gibt an, dass die Temperatur außerhalb des Wertebereiches liegt!
 
+![](https://github.com/MKleinSB/pxt-Seeed-Temperatursensor/blob/master/P1.png) 
 
 ## Supported targets
 
