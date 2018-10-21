@@ -22,7 +22,8 @@
 Diese Funktion gibt die aktuelle Temperatur als Zahl zurück.
 
 ## schreibe temperatur
-Diese Funktion schreibt die aktuelle Temperatur auf das Diplay des Calliope Mini / micro:bit
+Diese Funktion schreibt die aktuelle Temperatur auf das Diplay des Calliope Mini / micro:bit bzw. gibt eine Fehlermeldung
+aus, wenn der Temperaturbereich über-/unterschritten wird.
 
 ## Supported targets
 
