@@ -46,17 +46,18 @@ namespace Temperatursensor {
                 5,
                 42
             )
-            if (Temp = -1) {
-                basic.showString("Temperatur ausserhalb des Sensorbereichs!")
-            } else {
-                basic.showNumber(Temp)
-                images.createBigImage(`
+        }
+        if (Temp = -1) {
+            basic.showString("Temperatur ausserhalb des Sensorbereichs!")
+        } else {
+            basic.showNumber(Temp)
+            images.createBigImage(`
             . # . . .   # # . . .
             # . # . #   . . . . .
             . # . . #   . . . . .
             . . . . #   . . . . .
             . . . . .   # # . . .
             `).scrollImage(1, 200)
-            }
         }
     }
+}
