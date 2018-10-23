@@ -47,8 +47,7 @@ namespace Temperatursensor {
                 42
             )
             if (Temp = -1) {
-                // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
-                basic.showNumber(Temp)
+                 basic.showString ("Temperatur außerhalb des Sensorbereichs!")
             } else {
                 basic.showNumber(Temp)
                 images.createBigImage(`
