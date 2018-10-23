@@ -17,38 +17,47 @@ namespace Temperatursensor {
     export function Temperatur(): number {
         let Temperatur = -1
         let n = 0
-            n = pins.analogReadPin(AnalogPin.C16)
-            if (n >= 270 && n <= 699) {
-                Temperatur = pins.map(
-                    n,
-                    270,
-                    699,
-                    5,
-                    42
-                )
-            }
+        n = pins.analogReadPin(AnalogPin.C16)
+        if (n >= 270 && n <= 699) {
+            Temperatur = pins.map(
+                n,
+                270,
+                699,
+                5,
+                42
+            )
+        }
         return Temperatur;
-        
+
     }
-     /**
-     * Schreibt die aktuelle Temperatur auf dem 5x5 Display
-    */
+    /**
+    * Schreibt die aktuelle Temperatur auf dem 5x5 Display
+   */
     //% block
     export function SchreibeTemperatur(): void {
-        let Temp = -1
-        Temp = Temperatur()
-        if (Temp = -1) {
-            // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
-            basic.showNumber(Temp)
-        } else {
-            basic.showNumber(Temp)
-            images.createBigImage(`
+        let Temperatur = -1
+        let n = 0
+        n = pins.analogReadPin(AnalogPin.C16)
+        if (n >= 270 && n <= 699) {
+            Temperatur = pins.map(
+                n,
+                270,
+                699,
+                5,
+                42
+            )
+            if (Temp = -1) {
+                // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
+                basic.showNumber(Temp)
+            } else {
+                basic.showNumber(Temp)
+                images.createBigImage(`
             . # . . .   # # . . .
             # . # . #   . . . . .
             . # . . #   . . . . .
             . . . . #   . . . . .
             . . . . .   # # . . .
             `).scrollImage(1, 200)
+            }
         }
     }
-}
