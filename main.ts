@@ -36,17 +36,7 @@ namespace Temperatursensor {
     //% block
     export function SchreibeTemperatur(): void {
         let Temp = -1
-        let n = 0
-        n = pins.analogReadPin(AnalogPin.C16)
-        if (n >= 270 && n <= 699) {
-            Temp = pins.map(
-                n,
-                270,
-                699,
-                5,
-                42
-            )
-        }
+        Temp = Temperatur()
         if (Temp == -1) {
             basic.showString("Temperatur ausserhalb des Sensorbereichs!")
         } else {
