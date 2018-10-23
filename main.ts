@@ -38,7 +38,6 @@ namespace Temperatursensor {
     export function Temperatur(): number {
         let Temperatur = -1
         let n = 0
-        basic.forever(() => {
             n = pins.analogReadPin(AnalogPin.C16)
             if (n >= 270 && n <= 699) {
                 Temperatur = pins.map(
@@ -49,7 +48,7 @@ namespace Temperatursensor {
                     42
                 )
             }
-        })
         return Temperatur;
+        
     }
 }
