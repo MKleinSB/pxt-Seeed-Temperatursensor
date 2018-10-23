@@ -9,28 +9,6 @@
 //% color=#5042f4 icon="\uf2c9"
 namespace Temperatursensor {
     /**
-     * Schreibt die aktuelle Temperatur auf dem 5x5 Display
-    */
-    //% block
-    export function SchreibeTemperatur(): void {
-        let Temp = 0
-        Temp = Temperatur()
-        if (Temp = -1) {
-           // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
-            basic.showNumber(Temp)
-        } else {
-            basic.showNumber(Temp)
-            images.createBigImage(`
-            . # . . .   # # . . .
-            # . # . #   . . . . .
-            . # . . #   . . . . .
-            . . . . #   . . . . .
-            . . . . .   # # . . .
-            `).scrollImage(1, 200)
-        }
-    }
-
-    /**
      * Liest die Temperatur vom Grove-Sensor aus.
      * Aber nur im Bereich von 5⁰C bis 42⁰C
      * Der Wert -1 gibt an, dass die Temperatur außerhalb des Wertebereiches liegt!
@@ -51,5 +29,26 @@ namespace Temperatursensor {
             }
         return Temperatur;
         
+    }
+     /**
+     * Schreibt die aktuelle Temperatur auf dem 5x5 Display
+    */
+    //% block
+    export function SchreibeTemperatur(): void {
+        let Temp = 0
+        Temp = Temperatur()
+        if (Temp = -1) {
+            // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
+            basic.showNumber(Temp)
+        } else {
+            basic.showNumber(Temp)
+            images.createBigImage(`
+            . # . . .   # # . . .
+            # . # . #   . . . . .
+            . # . . #   . . . . .
+            . . . . #   . . . . .
+            . . . . .   # # . . .
+            `).scrollImage(1, 200)
+        }
     }
 }
