@@ -35,11 +35,11 @@ namespace Temperatursensor {
    */
     //% block
     export function SchreibeTemperatur(): void {
-        let Temperatur = -1
+        let Temp = -1
         let n = 0
         n = pins.analogReadPin(AnalogPin.C16)
         if (n >= 270 && n <= 699) {
-            Temperatur = pins.map(
+            Temp = pins.map(
                 n,
                 270,
                 699,
