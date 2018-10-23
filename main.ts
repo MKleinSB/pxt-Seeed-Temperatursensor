@@ -16,7 +16,8 @@ namespace Temperatursensor {
         let Temp = 0
         Temp = Temperatur()
         if (Temp = -1) {
-            basic.showString("Temperatur außerhalb des Sensorbereichs!")
+           // basic.showString("Temperatur außerhalb des Sensorbereichs!")
+            basic.showNumber(Temp)
         } else {
             basic.showNumber(Temp)
             images.createBigImage(`
