@@ -35,7 +35,7 @@ namespace Temperatursensor {
     */
     //% block
     export function SchreibeTemperatur(): void {
-        let Temp = 0
+        let Temp = -1
         Temp = Temperatur()
         if (Temp = -1) {
             // basic.showString ("Temperatur außerhalb des Sensorbereichs!")
