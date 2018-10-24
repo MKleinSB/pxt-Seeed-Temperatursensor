@@ -18,12 +18,12 @@
 
 ![](https://github.com/MKleinSB/pxt-Seeed-Temperatursensor/blob/master/P1.png) 
 
-## temperatur
+## Temperatur()
 Diese Funktion gibt die aktuelle Temperatur als Zahl zurück.
 
-## schreibe temperatur
+## SchreibeTemperatur()
 Diese Funktion schreibt die aktuelle Temperatur auf das Diplay des Calliope Mini / micro:bit bzw. gibt eine Fehlermeldung
-aus, wenn der Temperaturbereich über-/unterschritten wird.
+aus, wenn der Temperaturbereich über-/unterschritten wird. Es wird automatisch ⁰C angehängt.
 
 ## Supported targets
 
