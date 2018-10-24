@@ -1,5 +1,6 @@
 # pxt-seeed-temperatursensor
 
+![](https://github.com/MKleinSB/pxt-Seeed-Temperatursensor/blob/master/Sensor.png)
 
  Paket für den Temperatursensor V1.2 von Seeed
  
@@ -26,10 +27,9 @@ Diese Funktion gibt die aktuelle Temperatur als Zahl zurück.
 ## SchreibeTemperatur()
 ![](https://github.com/MKleinSB/pxt-Seeed-Temperatursensor/blob/master/schreibetemperatur.png)
 
-Diese Funktion schreibt die aktuelle Temperatur auf das Display des Calliope Mini / micro:bit bzw. gibt eine Fehlermeldung
+Diese Funktion schreibt die aktuelle Temperatur auf das Display des Calliope Mini bzw. gibt eine Fehlermeldung
 aus, wenn der Temperaturbereich über-/unterschritten wird. Es wird automatisch ⁰C angehängt.
 
 ## Supported targets
 
 * for PXT/calliope
-* for PXT/microbit
