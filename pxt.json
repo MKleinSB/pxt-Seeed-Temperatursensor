@@ -1,7 +1,7 @@
 {
     "name": "pxt-seeed-temperatursensor",
     "version": "0.0.10",
-    "description": "",
+    "description": "Seeed Temperature Sensor driver",
     "dependencies": {
         "core": "*",
         "radio": "*"
